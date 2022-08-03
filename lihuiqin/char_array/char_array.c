@@ -12,11 +12,11 @@ int main(){
     strcpy(p, "hello_china");
     puts(p);
     strcpy(str1, "hello_word");
-    puts(str1);
-    puts(p);
+    puts(str1);// 
+    puts(p); //bei chong xin tihuan
 
-    puts(str2);
-    strcpy(str2, "fight_ame"); // str2 shi yi ge zhi zhen,er "hello world"shi yige chang liang,chang liang bu ke yi bei gaibian,yinci baocuo
+    // puts(str2);
+    // strcpy(str2, "fight_ame"); // str2 shi yi ge zhi zhen,er "hello world"shi yige chang liang,chang liang bu ke yi bei gaibian,yinci baocuo
     puts(str2);
     
     exit(0);
