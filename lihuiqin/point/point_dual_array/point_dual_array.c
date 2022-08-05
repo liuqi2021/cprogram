@@ -6,7 +6,7 @@ int main(){
     int *p = array;
     int *q = array[0]; // xiang dang yu *array
     int i = 100;
-    int (*r)[3] = array;
+    int (*r)[3] = array;  //&array??
     printf("i = %d\n", i);
     printf("%p, %p\n", array, array+1);
     printf("%d, %d\n", **(array), **(array+1));
