@@ -1,0 +1,218 @@
+cscope 15 $HOME/cprogram/lihuiqin/linux_c/sysio/mycopy               0000000968
+	@main.c
+
+1 
+	~<¡ršg.h
+>
+
+2 
+	~<¡dio.h
+>
+
+3 
+	~<¡dlib.h
+>
+
+4 
+	~<”ºo.h
+>
+
+5 
+	~<uni¡d.h
+>
+
+6 
+	~<sys/ty³s.h
+>
+
+7 
+	~<sys/¡©.h
+>
+
+8 
+	~<fúŽ.h
+>
+
+10 
+	#BUFSIZE
+ 16777212
+
+	)
+
+11 
+	$maš
+(
+¬gc
+, *
+¬gv
+[]){
+
+12 
+buf
+[
+BUFSIZE
+];
+
+13 
+size_t
+ 
+Ën
+;
+
+14 
+»t
+, 
+pos
+;
+
+15 if(
+¬gc
+ < 3){
+
+16 
+	`³¼Ü
+("fopen");
+
+17 
+	`årštf
+(
+¡d”r
+, "fÝ’()%d\n", 
+”ºo
+);
+
+18 
+	`puts
+(
+	`¡»¼Ü
+(
+”ºo
+));
+
+19 
+	`ex™
+(1);
+
+21 
+fd_sourû
+, 
+fd_de¡
+;
+
+22 
+fd_sourû
+ = 
+	`Ý’
+(
+¬gv
+[1], 
+O_RDONLY
+);
+
+23 
+fd_de¡
+ = 
+	`Ý’
+(
+¬gv
+[2], 
+O_WRONLY
+|
+O_CREAT
+|
+O_TRUNC
+, 0600);
+
+26 
+Ën
+ = 
+	`»ad
+(
+fd_sourû
+, 
+buf
+, 
+BUFSIZE
+);
+
+27 if(
+Ën
+ < 0){
+
+30 if(
+Ën
+ == 0){
+
+33 
+pos
+ = 0;
+
+34 
+Ën
+ > 0){
+
+35 
+»t
+ = 
+	`wr™e
+(
+fd_de¡
+, 
+buf
++
+pos
+, 
+Ën
+);
+
+36 if(
+»t
+ < 0){
+
+37 
+	`³¼Ü
+("write()");
+
+38 
+	`ex™
+(1);
+
+40 
+pos
+ +ð
+»t
+;
+
+41 
+Ën
+-=
+»t
+;
+
+47 
+	`þo£
+(
+fd_de¡
+);
+
+48 
+	`þo£
+(
+fd_sourû
+);
+
+49 
+	`ex™
+(0);
+
+50 
+	}
+}
+
+	@
+1
+.
+0
+1
+7
+main.c
